@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet" type="text/css" href="marksheet.css">
+    <script src="marksheet.js"></script>
+</head>
+<body> 
+    <fieldset style="width:1250px">
+        <legend align="center"><b><h2>Student Marksheet:</h2></b></legend>
+        Name Of The Candidate:  <input size="40px" type="text" id="name">   
+             Roll No.:   <input type="text" id="rollNo" size="40px"> 
+               Enrolment No.:   <input size="40px" type="text" id="enrlNo"><br><br>
+               Exam Name:  <input size="40px" type="text" id="exam">
+         Centre No.:   <input size="40px" type="text" id="centNo">
+          College No.:   <input  size="40px" type="text" id="collNo"><br><br>
+         Medium:   <input size="40px" type="text" id="medium">
+          Category:   <input size="40px" type="text" id="cat"><br><br><br>
+        <table class="tableOne">
+           <tr ><th >Subject Code</th>
+            <th >Subject</th>
+            <th >Maximum Marks</th>
+            <th>Minimum Marks</th>
+            <th>Marks Obtained</th></tr>   
+               <tr><td>13122</td>
+                  <td>Advanced Computer Architecture</td>
+                  <td>100</td>
+                  <td>40</td>
+                  <td><input size="30px"type="text" id="acArch"></td></tr> 
+                <tr><td>13123</td>
+                    <td>Algorithmics</td>
+                    <td>100</td>
+                    <td>40</td>
+                    <td><input size="30px"type="text" id="alg"></td></tr> 
+                <tr><td>13122</td>
+                        <td>Operating System Design</td>
+                        <td>100</td>
+                        <td>40</td>
+                        <td><input size="30px"type="text" id="osDesign"></td></tr>       
+                <tr><td>13122</td>
+                            <td>Object Oriented System</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td><input size="30px"type="text" id="ooSystem"></td></tr>      
+                <tr><td>13122</td>
+                                <td>Mobile Computing</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td><input size="30px"type="text" id="mCom"></td></tr>      
+                <tr><td>13122</td>
+                                 <td>Algorithmics - Lab</td>
+                                 <td>50</td>
+                                 <td>25</td>
+                                 <td><input size="30px"type="text" id="alab"></td></tr> 
+                <tr><td>13122</td>
+                         <td>Operating System Design - Lab</td>
+                         <td>50</td>
+                        <td>25</td>
+                        <td><input size="30px"type="text" id="oslab"></td></tr>                                 
+        </table><br>
+
+        <button onclick= getResult()>Get Result</button><br>
+            Total Marks  : <input type="tel" id="ttlMarks" readonly>
+              
+            Average Marks: <input type="text" id="avg" readonly>
+                
+            Percentage   : <input type="text" id="perc" readonly>
+               
+            Grade        : <input type="text" id="grd" readonly>
+           
+            Result       : <input type="text" id="res" readonly>
+        </table>   
+    </fieldset>
+    
+    
+   
+</body>
+</html>

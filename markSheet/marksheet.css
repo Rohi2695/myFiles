@@ -1,0 +1,49 @@
+body{
+    width: auto;
+      background-color: rgb(250, 213, 168); 
+     border: rgb(40, 26, 119); 
+   
+   margin: 10px;
+   padding: 10px;
+   border-style:double; 
+  
+  
+}
+
+.tableOne{
+   width: 1200px;
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    background-color: darksalmon;
+    border: solid 1px black;
+    height: 30px;
+}
+td{
+    background-color: rgb(250, 208, 193);
+    border: solid 1px black;
+    height: 30px;
+}
+button{   
+    background-color: rgb(144, 245, 62);
+    border-radius: 8px;
+    color: rgb(9, 10, 9);
+    font-size: 15px;
+    padding: 10px;
+    margin: 30px;
+    width: 150px;
+    font-size: 18px;
+    
+}
+button:active{
+    transform: scale(0.95);
+} 
+button:focus{
+    outline:none;
+    }
+ h2{
+     color: rgb(231, 19, 19);
+ }
+ 
