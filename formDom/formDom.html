@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    div{
+        margin: 10px;
+    }
+</style>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend> 
+<div>
+  <label>First Name</label>
+  <input type="text" id="fname" placeholder="Enter First Name"> <br><br>
+  <lable>Last Name</lable>
+  <input type="text" id="lname"  placeholder="Enter Last Name"><br><br>
+  <lable>Screen Name</lable>
+  <input type="text" id="sname" placeholder="Enter Screen Name"><br><br>
+  <lable>Date Of Birth</lable>
+  <input type="date" id="date"><br><br>
+  <label>E-mail</label>
+    <input type="email" id="mail" placeholder="ex.rrrr@domain name" autocomplete="off"> <br><br>
+    <label for="phone">Phone</label>
+  <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000"><br><br>
+  
+</div>
+<div>
+    <lable>Country</lable>
+    <select name="country" id="cont">
+        <option>Brazil</option>
+        <option>Egypt</option>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+        <option>Shrilanka</option>
+    </select><br><br>
+</div>    
+
+<div>
+    <label for="gender">Select Gender</label>
+    <input type="radio" id="male" value="Male" name="gender">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" value="Female" name="gender">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" value="Other" name="gender">
+    <label for="other">Other</label>
+</div>
+
+
+
+
+
+
+<div>
+
+    
+ 
+  <label for="active">I agree to the Terms Of Use</label>
+  <input type="checkbox" name="active" id="active" value="yes">
+  <label for="yes">Yes</label>
+
+</div> 
+
+<div>
+    <button onclick=displayForm() type="button">Get Values</button>
+</div>
+
+  </fieldset>
+  </form>
+<script src="formDom.js"></script>
+</body>
+</html>
