@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+  />
+</head>
+<style>
+    body{
+        background-color:thistle ;
+    }
+    h1{
+       
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h3{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color:rgb(248, 6, 18);
+    }
+    h2{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color:rgb(247, 223, 10);
+    }
+    p{
+        font-size: 25px;
+        font-weight: bolder;
+        font-family: fantasy;
+        color: rgb(182, 241, 42);
+    }
+</style>
+<body>
+    <marquee bgcolor="Orange"><h1>Welcome To My Image Gallery </h1></marquee>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="slide 4"  ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+        
+        <div class="carousel-inner">
+            
+          <div class="carousel-item active m-5 p-3">
+            <img src="./creation/IMG_20210226_210753.jpg" class="d-block " style="height: 500px; width: 1250px;border:solid 3px;color:  maroon;">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>||गण गण गणात बोते||</h3>
+                <p>||अनंतकोटी ब्रह्मांडनायक महाराजाधिराज योगीराज परब्रह्म सच्चिदानंद भक्तप्रतिपालक शेगांव निवासी समर्थ सद्गुरू श्री गजानन महाराज की जय||</p>
+              </div>
+          </div>
+          <div class="carousel-item  m-5 p-3">
+            <img src="./creation/IMG_20201021_141748654~2.jpg" class="d-block " style="height: 500px; width: 1250px;border:solid 3px;color:  maroon;">
+            <div class="carousel-caption d-none d-md-block">
+                <p>I started painting as a hobby when I was little. I didn’t know I had any talent. I believe talent is just a pursued interest. Anybody can do what I do.<br>
+                    <i>― Bob Ross </i></p>
+               
+              </div>
+          </div>
+          <div class="carousel-item  m-5 p-3">
+            <img src="./creation/IMG_20200521_191409250~2.jpg" class="d-block" style="height: 500px; width: 1250px;border:solid 3px;color:  maroon;">
+        
+          </div>
+          <div class="carousel-item  m-5 p-3">
+            <img src="./creation/IMG_20200729_192438072~3.jpg" class="d-block" style="height: 500px; width: 1250px;border:solid 3px;color:  maroon;">
+            <div class="carousel-caption d-none d-md-block">
+                <p>ऊँगली पकड़ कर चलना सिखाया हमको,
+                    अपनी नींद देकर चैन से सुलाया हमको,
+                    अपने आँसू छुपा के हँसाया हमको,
+                    कोई दुःख न देना ए खुदा उनको,
+                    ले लेना जान जो हमने कभी रुलाया उनको…
+                </p>
+               
+            </div>
+          </div>
+          <div class="carousel-item  m-5 p-3">
+            <img src="./creation/IMG_20200415_140709261~2.jpg" class="d-block" style="height: 500px; width: 1250px;border:solid 3px;color:  maroon;">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>"Warli Painting"</h2>
+                <p>Maharashtra is known for its Warli folk paintings. ... 
+                    These paintings do not depict mythological characters or images of deities, 
+                    but depict social life. Images of human beings and animals, 
+                    along with scenes from daily life are created in a loose rhythmic pattern.</p>
+            </div>
+          </div>
+          <div class="carousel-item  m-5 p-3">
+            <img src="./creation/IMG_20200603_150504_158.jpg" class="d-block" style="height: 500px; width: 1250px;border:solid 3px;color:  maroon;">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>"श्री विष्णु मंत्र"</h2>
+                <p>||शान्ताकारम् भुजगशयनम् पद्मनाभम् सुरेशम्
+                    विश्वाधारम् गगनसदृशम् मेघवर्णम् शुभाङ्गम्।
+                    लक्ष्मीकान्तम् कमलनयनम् योगिभिर्ध्यानगम्यम्
+                    वन्दे विष्णुम् भवभयहरम् सर्वलोकैकनाथम्॥</p>
+            </div>
+          </div>
+          <div class="carousel-item  m-5 p-3">
+            <img src="./creation/IMG_20190303_194840888~2.jpg" class="d-block" style="height: 500px; width: 1250px;border:solid 3px;color:  maroon;">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>"Lord Shiv-Parvati"</h2>
+                <p>||Shiva & Shakti are inseparable!
+                  Jai Mahakaal…Jai Mahakaali!||</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>
