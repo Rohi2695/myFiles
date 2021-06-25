@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Reservation</title>
+</head>
+<body>
+    <from aria-autocomplete="on"> 
+        <fieldset>
+            <legend>Reservation</legend>
+        <lable> Passenger Details</lable><br>
+        <select >
+            <option value="Title">Title</option>
+            <option value="Mr">Mr</option>
+            <option value="Miss">Miss</option>
+            <option value="Mrs">Mrs</option>
+        </select>
+        <input type="text" minlength="10" maxlength="10" placeholder="First Name" size="20">
+        <Input type="Text" minlength="10" maxlength="10"  size="20"placeholder="Last name">
+            <br><br>
+            <lable>Date Of Birth</lable><br>
+            <input type="date">
+            <br><br>
+        
+        <lable>Contact Person</lable><br>
+        <select>
+            <option value="Title">Title</option>
+            <option value="Mr">Mr</option>
+            <option value="Miss">Miss</option>
+            <option value="Mrs">Mrs</option>
+        </select>
+        <input type="text" minlength="10" maxlength="10" placeholder="First Name" >
+        <Input type="Text" minlength="10" maxlength="10"  placeholder="Last name"><br><br>
+        <lable >E-Mail</lable><br>
+        <input type="email" placeholder="gbbg122g@Domain name"><br><br>
+        <lable>phone</lable><br>
+        <input type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="### ### ####"><br><br>
+        <label>Address</label>
+        <address><input type="text" placeholder="Street Address" >
+        </address>
+        <br>
+        <address><input type="text" placeholder="Street Address Line 2" >
+        </address><br>
+        <input type="Text" placeholder="City">
+        <input type="text" placeholder="State">
+        <br><br>
+        <input type="pin code" placeholder="Post/Zip Code">
+        <input type="text" placeholder="Country"><br><br>
+        <label>Departure Date & Time</label><br>
+        <input type="datetime-local"><br><br>
+        <label>Return Date & Time</label><br>
+        <input type="datetime-local"><br><br>
+        <label>Departing From</label><br>
+        <input type="text" placeholder="city">
+        <input type="text" placeholder="Country"><br><br>
+        <label>Destination</label><br>
+        <input type="text" placeholder="city">
+        <input type="text" placeholder="Country"><br><br>
+        <label>Airline</label><br>
+        <select>
+            <option>Airline 1</option>
+            <option>Airline 2</option>
+            <option>Airline 3</option>
+        </select><br><br>
+        <label>Fare</label><br>
+        <select>
+            <option>On Way</option>
+            <option>Round-Trip</option>
+            
+        </select><br><br>
+        <input type="submit" value="RESERVE FLIGHT">
+        <Input type="reset" Value="Reset">
+
+        
+    </fieldset>  
+    </from>
+</body>
+</html>
