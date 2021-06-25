@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TABLE</title>
+</head>
+<style>
+    table,th,td{
+        border: solid 2px black;
+        border-collapse: collapse;
+        margin: 30px;
+        padding: 30px;
+        font-size: 20px;
+        width: 1300px;
+        text-align: center;
+    }
+    th{
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: gray;
+    }
+    td{
+        background-color: rgb(235, 227, 227);
+    }
+    
+    button{
+       
+    background-color: rgb(245, 150, 119);
+    border:0;
+    border-radius: 8px;
+    color: rgb(9, 10, 9);
+    font-size: 18px;
+    padding: 10px;
+    margin: 30px;
+    width: 300px;
+    
+}
+button:active{
+    transform: scale(0.95);
+} 
+button:focus{
+    outline:none;
+    }
+    
+</style>
+<body>
+    <button class="center" onclick=createTable()>Click Me</button>
+    <script>
+        function createTable() {
+    const table = document.createElement("table")
+    const row1 = document.createElement("tr")
+     const row2 = document.createElement("tr")
+     const row3 = document.createElement("tr")
+     const row4 = document.createElement("tr")
+   
+    const dayHead = document.createElement("th")
+    const seminarHead = document.createElement("th")
+    const topicHead = document.createElement("th")
+    
+    const day = document.createElement("td") 
+      const seminar = document.createElement("td") 
+     const topic = document.createElement("td") 
+     
+     const day1 = document.createElement("td") 
+      const seminar1 = document.createElement("td") 
+     const topic1 = document.createElement("td") 
+
+     const day2 = document.createElement("td") 
+      const seminar2 = document.createElement("td") 
+     const topic2 = document.createElement("td")
+    
+    const body = document.body
+
+    body.append(table)
+
+    table.appendChild(row1);
+    table.appendChild(row2);
+    table.appendChild(row3);
+    table.appendChild(row4);
+    
+
+    row1.appendChild(dayHead)
+    row1.appendChild(seminarHead)
+    row1.appendChild(topicHead)
+   
+    row2.appendChild(day)
+     row2.appendChild(seminar)
+     row2.appendChild(topic)
+    
+     row3.appendChild(day1)
+     row3.appendChild(seminar1)
+     row3.appendChild(topic1)
+
+     row4.appendChild(day2)
+     row4.appendChild(seminar2)
+     row4.appendChild(topic2)
+   
+    dayHead.append("Day")
+    seminarHead.append("Seminar")
+    topicHead.append("Topic")
+   
+    day.append("Monday")
+    seminar.append("8am to 11am")
+    topic.append("Introduction to HTML")
+   
+
+    day1.append("Tuesday")
+    seminar1.append("8am to 12am")
+    topic1.append("Introduction to CSS")
+
+    day2.append("Wednesday")
+    seminar2.append("8am to 12pm")
+    topic2.append("CSS Box Model")
+    
+    
+   
+
+
+}
+
+
+
+
+
+        
+    </script>
+</body>
+</html>
