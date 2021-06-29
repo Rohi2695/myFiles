@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card</title>
+    <link rel="stylesheet" type="text/css" href="restaurantMenu.css">
+</head>
+
+<body>
+    <button  onclick=displayMenuCard()>Click Me</button> 
+    <marquee bgcolor= pink  direction = right><h2>DELICIOUS   SOUTH   INDIAN   DISHES</h2></marquee>
+    <img src="./menuImg/images (2).jpg"  width="250px" height="200px">
+    <img src="./menuImg/images.jpg"  width="250px" height="200px">
+    <img src="./menuImg/images (6).jpg"  width="200px" height="200px">
+    <img src="./menuImg/images (4).jpg"  width="230px" height="200px">
+    <img src="./menuImg/images (3).jpg"  width="250px" height="200px">
+    
+   
+   
+    
+
+   <script>
+        function displayMenuCard()
+        {
+        let body = document.body;
+
+var heading = document.createElement("h1")
+body.append(heading)
+heading.append(" Welcome To Delicious South Special Restaurant")
+      
+
+let container=document.createElement("div")
+body.append(container)
+
+let paraOne = document.createElement("p")
+ container.appendChild(paraOne)
+ let pContent1 = document.createTextNode("...............................Menu__List.................................")
+ paraOne.append(pContent1)
+
+
+ let paraTwo = document.createElement("p1")
+ container.appendChild(paraTwo)
+ let pOne = document.createTextNode("MORNING SPECIAL")
+ paraTwo.append(pOne)
+
+ let ul = document.createElement("ul")
+container.appendChild(ul)
+
+let one=document.createElement("li")
+ul.appendChild(one)
+one.append("Plain Idli__________50/-")
+
+let two=document.createElement("li")
+ul.appendChild(two)
+two.append("Fried Idli__________70/-")
+
+let three=document.createElement("li")
+ul.appendChild(three)
+three.append("Sambar Vada_______60/-")
+
+let morningFour=document.createElement("li")
+ul.appendChild(morningFour)
+morningFour.append("Dahi Vada________80/-")
+
+let paraThree = document.createElement("p1")
+ container.appendChild(paraThree)
+ let pTwo = document.createTextNode("DOSA")
+ paraThree.append(pTwo)
+
+ let ulOne = document.createElement("ul")
+container.appendChild(ulOne)
+
+let four=document.createElement("li")
+ulOne.appendChild(four)
+four.append("Plain Dosa________________60/-")
+
+let five=document.createElement("li")
+ulOne.appendChild(five)
+five.innerText="Masala Dosa______________70/-"
+
+let six=document.createElement("li")
+ulOne.appendChild(six)
+six.append("Butter Masala Dosa_________80/-")
+
+let seven=document.createElement("li")
+ulOne.appendChild(seven)
+seven.append("Paneer Butter Masala Dosa___100/-")
+
+let eight=document.createElement("li")
+ulOne.appendChild(eight)
+eight.append("Cutting Dosa______________100/-")
+
+let dosaOne=document.createElement("li")
+ulOne.appendChild(dosaOne)
+dosaOne.append("Maysore Dosa_____________110/-")
+
+let dosaTwo=document.createElement("li")
+ulOne.appendChild(dosaTwo)
+dosaTwo.innerText="Paper Masala Dosa_________90/-"
+
+let dosaThree=document.createElement("li")
+ulOne.appendChild(dosaThree)
+dosaThree.append("Cheese Masala Dosa________120/-")
+
+let dosaFour =document.createElement("li")
+ulOne.appendChild(dosaFour)
+dosaFour.append("Family Dosa______________140/-")
+
+let dosaFive=document.createElement("li")
+ulOne.appendChild(dosaFive)
+dosaFive.append("Special Dosa______________150/-")
+
+let containerOne=document.createElement("div")
+body.append(containerOne)
+
+let paraFour = document.createElement("p1")
+ container.appendChild(paraFour)
+ let pThree = document.createTextNode("UTTAPAM")
+ paraFour.append(pThree)
+
+let ulThree = document.createElement("ul")
+container.appendChild(ulThree)
+
+ let uttapamOne=document.createElement("li")
+ ulThree.appendChild(uttapamOne)
+ uttapamOne.append("Plain Uttapam___________65/-")
+
+ let uttapamTwo=document.createElement("li")
+ ulThree.appendChild(uttapamTwo)
+ uttapamTwo.innerText="Onion Uttapam__________80/-"
+
+ let uttapamThree =document.createElement("li")
+ ulThree.appendChild(uttapamThree)
+ uttapamThree.append("Tomato Uttapam_________80/-")
+
+ let uttapamFour=document.createElement("li")
+ ulThree.appendChild(uttapamFour)
+ uttapamFour.append("Paneer Uttapam__________100/-")
+
+ let uttapamFive=document.createElement("li")
+ ulThree.appendChild(uttapamFive)
+ uttapamFive.innerText="Mix Uttapam____________110/-"
+
+ let uttapamSix=document.createElement("li")
+ ulThree.appendChild(uttapamSix)
+ uttapamSix.append("Cheese Uttapam __________120/-")
+
+ let uttapamSeven=document.createElement("li")
+ ulThree.appendChild(uttapamSeven)
+ uttapamSeven.append("Special Uttapam__________150/-")
+
+
+ 
+
+ }
+    </script>
+</body>
+</html>
