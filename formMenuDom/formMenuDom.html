@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Form</title>
+</head>
+<style>
+    div{
+        margin: 10px;
+    }
+    h2{
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    img{
+       margin-top: 10px; 
+    }
+    body{
+        background-color: rgb(247, 245, 128);
+    }
+</style>
+<body>
+    <fieldset>
+        <legend>SOUTH RESTAURANT</legend> 
+        <marquee bgcolor="pink" direction="right"><h2>Delicious Food &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Delicious Food</h2></marquee>
+        <img src="./menuImg/images (1).jpg" height="200" width="250">
+        <img src="./menuImg/images (2).jpg" height="200" width="250">
+        <img src="./menuImg/images (3).jpg" height="200" width="250">
+        <img src="./menuImg/images (4).jpg" height="200" width="250">
+        <img src="./menuImg/images (5).jpg" height="200" width="270">
+<div>
+  <label>Coustomer Id</label>
+  <input type="text" id="cstId" > <br><br>
+  <lable>Coustomer First Name</lable>
+  <input type="text" id="fname"  placeholder="Enter First Name"><br><br>
+  <lable>Coustomer First Name</lable>
+  <input type="text" id="lname" placeholder="Enter Last Name"><br><br>
+  <lable>Date Of Birth</lable>
+  <input type="date" id="date"><br><br>
+  <lable>City</lable>
+  <input type="text" id="city"><br><br>
+  <label>E-mail</label>
+    <input type="email" id="mail" placeholder="ex.rrrr@domain name" autocomplete="off"> <br><br>
+    <label for="phone">Phone</label>
+  <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000"><br><br>
+  
+</div>
+
+<div>
+    <label for="gender">Select Gender</label>
+    <input type="radio" id="male" value="Male" name="gender">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" value="Female" name="gender">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" value="Other" name="gender">
+    <label for="other">Other</label>
+</div><br>
+<div>
+    <lable>Menu List</lable>
+    <select name="menu" id="mlist">
+            <optgroup label="Morning Special">
+                <option value="plane">Plain Idli__50/-</option>
+                <option value="fried">Fried Idli___70/-</option>
+                <option value="vada">Sambar Vada___80/-</option>
+            </optgroup>
+
+            <optgroup label="Dosa">
+                <option value="masala">Masala Dosa__70/-</option>
+                <option value="butter">Butter Dosa__80/-</option>
+                <option value="paneer">Paneer Dosa__100/-</option>
+            </optgroup>
+        
+    </select><br><br>
+</div>    
+
+<div>
+  <label for="active">You Are Happy</label>
+  <input type="checkbox" name="active" id="active" value="yes">
+  <label for="yes">Yes</label>
+</div> 
+<br>
+<div>
+    <button onclick=displayForm() type="button">Order</button>
+</div>
+
+  </fieldset>
+  </form>
+<script src="formMenuDom.js"></script>
+</body>
+</html>
