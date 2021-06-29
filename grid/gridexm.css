@@ -1,0 +1,63 @@
+.container1{
+    display: grid;
+    grid-template-columns: 600px 2fr 2fr ;
+    grid-template-rows: 150px 150px;
+      column-gap: 20px;
+      row-gap: 10px;
+      background-color: rgb(209, 225, 65);
+      padding: 10px;
+      margin: 20px;
+      
+}
+img{
+    height: 100%;
+    width: 100%;
+    border: solid 1px darkred;
+}
+.one{
+
+grid-row: 1 / span 2;
+}
+.container2{
+    display: inline-grid;
+    grid-template-columns: 300px 300px 1fr 1fr;
+    grid-template-rows: 400px 200px;
+      column-gap: 20px;
+      row-gap: 10px;
+      background-color: rgb(65, 225, 185);
+      padding: 10px;
+      margin: 20px;
+}
+.six{
+    grid-column: 1 / span 3;
+} 
+
+.seven{
+    grid-column: 4;
+    grid-row: 1 / span 2;
+}
+.container3{
+    display: grid;
+    grid-template-columns: 500px 2fr 2fr 3fr;
+    grid-template-rows: 300px;
+      column-gap: 20px;
+      background-color: rgb(225, 65, 225);
+      padding: 10px;
+      margin: 20px;
+     
+}
+.container4{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    background-color: rgb(190, 225, 65);
+    grid-gap: 10px; 
+    padding: 10px;
+    margin: 20px;
+     
+}
+.container4>div{
+    background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
